@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <div>
+        <h1 style="text-align: center;">Welcome to Online Mobile Shop</h1>
+        <div style="width: 30%; margin:25px auto;">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="password">
+                </div>
+                <a href="" class="float-right">Forgot password?</a>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block" style="color: white;">Submit</button>
+                </div>
+            </form>   
+            <p>Don't have an account? <a href="/register">Sign up here</a></p>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

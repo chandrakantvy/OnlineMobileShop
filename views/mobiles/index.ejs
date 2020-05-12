@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div>
+            <h1>Welcome to Online Mobile Shop!!!</h1>
+            <p>The only place to get all kinds of mobile devices.</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/mobiles/new">Add new mobile</a>
+            </p>
+        </div>
+    </header>
+    
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <% mobiles.forEach(function(mobile) { %>
+        <div class="col-md-3 col-md-6">
+            <div class="thumbnail">
+                <img src="<%= mobile.image %>" height=600px width=600px>
+                <div class="caption">
+                    <h4><%= mobile.name %></h4>
+                    <p>
+                        <a href="/mobiles/<%= mobile._id %>" class="btn btn-primary">More details</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

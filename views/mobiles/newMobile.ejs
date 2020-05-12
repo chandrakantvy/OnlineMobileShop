@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+
+<div class="container">
+    <div>
+        <h1 style="text-align: center;">Add New Mobile</h1>
+        <div style="width: 30%; margin:25px auto;">
+            <form action="/mobiles" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="price" placeholder="price">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="image" placeholder="image URL">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="description" placeholder="description">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-outline-success btn-primary btn-block" style="color: white;">Submit</button>
+                </div>
+            </form>   
+            <a href="/mobiles"> Go Back to Mobile page</a>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
