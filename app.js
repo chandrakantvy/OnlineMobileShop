@@ -13,7 +13,13 @@ var express        = require("express"),
     seedDB         = require("./seeds");
 
 // seedDB();
-mongoose.connect("mongodb://localhost/onlineMobileShop", {useNewUrlParser: true, useUnifiedTopology: true});
+var url = process.env.DATABASEURL || "mongodb://localhost/onlineMobileShop";
+mongoose.connect(url,
+{
+    useNewUrlParser:true,
+    useUnifiedTopology: true
+});
+
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static(__dirname+ "/public"));
 app.set("view engine", "ejs");

@@ -1,4 +1,4 @@
-# MobileOnlineShop
+# MobileOnlineInfo
 
 * add landing page
 * add Mobile page that list all Mobiles
