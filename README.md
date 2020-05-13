@@ -1,32 +1,7 @@
 # MobileOnlineInfo
 
-* add landing page
-* add Mobile page that list all Mobiles
+You can view different mobiles devices, add your own device, its like wikipedia
+of mobile device. You can comment, ask questions. 
 
-Each Mobile has:
-* name
-* Image
-
-
-# layout and basic styling
-* Add header and footer partials
-* Add in bootstrap
-
-# Adding new mobile to shop
-* Creating new mobile POST routes
-* Add in body parser
-* Set up route to show form
-* Add basic unstyled form
-
-# Style the campground page
-* Add a better header/title
-* make mobiles display in grid 
-
-# Style the Navbar and Form
-* Add a navbar to all templates
-* Style the new mobile form page
-
-# Add mongoose
-* install and configure mongoose
-* Setup the mobile model
-* Use mobile model inside of our routes
+Right now run on localhost:8080 also has the facility of mongo database so you
+need to have mongodb if you are planning of running this site locally.
